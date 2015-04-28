@@ -10,4 +10,18 @@ For more information, visit the [WireMock website](http://wiremock.org/)
 1.55
 
 ##Running
-docker run --name wiredock -p 8080:8080 danhumphrey/wiredock
+
+Port 8080 is exposed for port mapping, but this can be mapped to any local port
+
+	docker run -p 9999:8080 danhumphrey/wiredock
+
+###Volumes
+
+The following volumes are mounted for providing files and json mappings 
+
+* /wiremock/__files
+* /wiremock/__mappings
+
+eg.
+
+	docker run -p 8080:8080 -v ~/Desktop/wiredock/mappings:/wiredock/mappings danhumphrey/wiredock 
