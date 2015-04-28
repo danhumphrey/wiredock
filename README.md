@@ -8,3 +8,6 @@ For more information, visit the [WireMock website](http://wiremock.org/)
 
 ##WireMock Version
 1.55
+
+##Running
+docker run --name wiredock -p 8080:8080 danhumphrey/wiredock
