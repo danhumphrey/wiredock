@@ -1,0 +1,2 @@
+# wiredock
+WireMock Dockerfile
