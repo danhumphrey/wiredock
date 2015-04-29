@@ -17,7 +17,7 @@ Port 8080 is exposed for port mapping, but this can be mapped to any local port
 
 ###Volumes
 
-The following volumes are mounted for providing files and json mappings 
+The following volumes are mounted for serving files and json mappings 
 
 * /wiremock/__files
 * /wiremock/__mappings
@@ -25,3 +25,11 @@ The following volumes are mounted for providing files and json mappings
 eg.
 
 	docker run -p 8080:8080 -v ~/Desktop/wiredock/mappings:/wiredock/mappings danhumphrey/wiredock 
+
+###Arguments
+
+Arguments can be passed to switch on proxy recording, verbose logging etc. 
+
+eg.
+
+	docker run -p 8080:8080 -v ~/Desktop/wiredock/mappings:/wiredock/mappings danhumphrey/wiredock --verbose
