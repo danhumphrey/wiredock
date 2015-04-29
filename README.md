@@ -20,7 +20,7 @@ Port 8080 is exposed for port mapping, but this can be mapped to any local port
 The following volumes are mounted for serving files and json mappings 
 
 * /wiremock/__files
-* /wiremock/__mappings
+* /wiremock/mappings
 
 eg.
 
