@@ -5,7 +5,7 @@
 
 FROM dockerfile/java:oracle-java8
 
-MAINTAINER Dan Humphrey
+MAINTAINER Dan Humphrey "danh2000@gmail.com"
 
 ENV WIREDOCK_VERSION 1.1
 ENV WIREMOCK_VERSION 1.55
