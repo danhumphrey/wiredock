@@ -6,16 +6,16 @@ A simple WireMock Dockerfile.
 
 For more information, visit the [WireMock website](http://wiremock.org/)
 
-##WireMock Version
+## WireMock Version
 1.55
 
-##Running
+## Running
 
 Port 8080 is exposed for port mapping, but this can be mapped to any local port
 
 	docker run -p 9999:8080 danhumphrey/wiredock
 
-###Volumes
+### Volumes
 
 The following volumes are mounted for serving files and json mappings 
 
@@ -26,7 +26,7 @@ eg.
 
 	docker run -p 8080:8080 -v ~/Desktop/wiredock/mappings:/wiredock/mappings danhumphrey/wiredock 
 
-###Arguments
+### Arguments
 
 Arguments can be passed to switch on proxy recording, verbose logging etc. 
 
